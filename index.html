@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo Free Fire - Prueba</title>
+    <link rel="stylesheet" href="torneo.css" />
+</head>
+
+<body>
+
+    <!-- ENCABEZADO --> 
+    <header class="hero">
+        <p class="etiqueta">TORNEO OFICIAL</p>
+        <h1>🔥 FREE FIRE 🔥<span>CHAMPIONSHIP</span></h1>
+        <p class="descripcion">
+            Inscríbete, arma tu escuadrón y pelea por el primer lugar.
+            Cualquiera puede participar y ganar ¿Te animas?
+        </p>
+        <div class="botones">
+            <a href="#inscripcion" class="btn btn-principal">Inscribir equipo</a>
+            <a href="#tabla" class="btn btn-secundario">Ver tabla de posiciones</a>
+        </div>
+    </header>
+
+    <!-- DATOS DEL TORNEO -->
+    <section class="datos">
+        <article class="dato">
+            <h2>Premio(Dado el caso que sea por cuota)</h2>
+            <p>$100 MXN</p>
+        </article>
+        <article class="dato">
+            <h2>Modo</h2>
+            <p>Solitario</p>
+        </article>
+        <article class="dato">
+            <h2>Fecha</h2>
+            <p>25 de Noviembre</p>
+        </article>
+        <article class="dato">
+            <h2>Cupos</h2>
+            <p>Limitados</p>
+        </article>
+    </section>
+
+    <!-- TABLA DE POSICIONES -->
+    <section id="tabla" class="seccion">
+        <h2 class="titulo-seccion">Tabla de posiciones</h2>
+        <table>
+            <tr>
+                <th>NO.</th>
+                <th>EQUIPO</th>
+                <th>JUGADAS</th>
+                <th>BAJAS</th>
+                <th>PUNTOS</th>
+            </tr>
+            <tr>
+                <td>1🥇</td>
+                <td>Los Tigres</td>
+                <td>8</td>
+                <td>42</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>2🥈</td>
+                <td>Team Diego</td>
+                <td>8</td>
+                <td>38</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>3🥉</td>
+                <td>Los Inmortales</td>
+                <td>8</td>
+                <td>35</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>FF Niños</td>
+                <td>8</td>
+                <td>29</td>
+                <td>71</td>
+                </tr>
+                <tr>
+                <td>5</td>
+                <td>FF Rata</td>
+                <td>5</td>
+                <td>20</td>
+                <td>14</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- REGLAS -->
+    <section class="seccion">
+        <h2 class="titulo-seccion">Reglas del torneo</h2>
+        <ul class="reglas">
+            <li>Ser mayor de 13 años.</li>
+            <li>No se permite usar hacks ni emuladores.</li>
+            <li>Entrar a la sala 10 minutos antes.</li>
+            <li>Respeto total a los demás jugadores.</li>
+            <li>Si en caso de haber finalizado el deposito no accedera al torneo.</li>
+            <li>Si en dado caso de que el torneo sea cancelado, se reembolsará el 100% de la inscripción.</li>
+        </ul>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section id="inscripcion" class="seccion">
+        <h2 class="titulo-seccion">Inscripción</h2>
+        <form class="formulario">
+            <label>Nombre del equipo
+                <input type="text" placeholder="Ej: Team Diego" required>
+            </label>
+
+            <label>ID del jugador
+                <input type="text" placeholder=" Ej:123456789" required>
+            </label>
+
+            <label>Correo
+                <input type="email" placeholder="correo@ejemplo.com" required>
+            </label>
+
+            <label>Modo de juego
+                <select>
+                    <option>Squad 4v4</option>
+                    <option>Dúo</option>
+                    <option>Solitario</option>
+                </select>
+            </label>
+
+            <button type="submit" class="btn btn-principal">Enviar inscripción</button>
+        </form>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <p>Torneo Free Fire · Página de prueba hecha para aprender HTML y CSS</p>
+        <p><a href="index.html">Volver a la página principal</a></p>
+    </footer>
+
+</body>
+
+</html>

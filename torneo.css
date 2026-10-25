@@ -1,0 +1,286 @@
+/* ===== PÁGINA DEL TORNEO FREE FIRE ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #f1f1f1;
+}
+
+body {
+    background-color: #12121c;
+    line-height: 1.6;
+}
+
+/* ===== ENCABEZADO ===== */
+.hero {
+    padding: 70px 20px;
+    text-align: center;
+    background: linear-gradient(160deg, #1b1b2f 0%, #3d1024 60%, #ff4d00 100%);
+    border-bottom: 4px solid #ffb300;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 6px 16px;
+    margin-bottom: 18px;
+    border: 2px solid #ffb300;
+    border-radius: 30px;
+    color: #ffb300;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+    text-shadow: 3px 4px 0 #7a1f00;
+}
+
+.hero h1 span {
+    color: #ffb300;
+    font-size: 48px;
+}
+
+.descripcion {
+    max-width: 620px;
+    margin: 20px auto;
+    color: #d6d6e0;
+    font-size: 18px;
+}
+
+.botones {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-principal {
+    background-color: #ff6a00;
+    color: #fff;
+}
+
+.btn-principal:hover {
+    background-color: #ffb300;
+    color: #12121c;
+    transform: translateY(-3px);
+}
+
+.btn-secundario {
+    background-color: transparent;
+    border: 2px solid #ffb300;
+    color: #ffb300;
+}
+
+.btn-secundario:hover {
+    background-color: #ffb300;
+    color: #12121c;
+    transform: translateY(-3px);
+}
+
+/* ===== DATOS DEL TORNEO ===== */
+.datos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    max-width: 1000px;
+    margin: -45px auto 0;
+    padding: 0 20px;
+}
+
+.dato {
+    background-color: #1e1e30;
+    border: 1px solid #33334d;
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.dato:hover {
+    border-color: #ffb300;
+    transform: translateY(-5px);
+}
+
+.dato h2 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #8f8fa8;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.dato p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffb300;
+}
+
+/* ===== SECCIONES ===== */
+.seccion {
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.titulo-seccion {
+    font-size: 28px;
+    margin-bottom: 22px;
+    padding-left: 14px;
+    border-left: 6px solid #ff6a00;
+}
+
+/* ===== TABLA ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1e1e30;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #2f2f45;
+}
+
+th {
+    background-color: #ff6a00;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover,
+table tr:hover td {
+    background-color: #2a2a42;
+}
+
+/* ===== REGLAS ===== */
+.reglas {
+    list-style: none;
+}
+
+.reglas li {
+    background-color: #1e1e30;
+    border-left: 4px solid #ffb300;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    color: #d6d6e0;
+}
+
+.reglas li::before {
+    content: "▸ ";
+    color: #ff6a00;
+    font-weight: bold;
+}
+
+/* ===== FORMULARIO ===== */
+.formulario {
+    display: grid;
+    gap: 18px;
+    max-width: 480px;
+    background-color: #1e1e30;
+    border: 1px solid #33334d;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.formulario label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    color: #a8a8c0;
+}
+
+.formulario input,
+.formulario select {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #3a3a55;
+    background-color: #14141f;
+    color: #f1f1f1;
+    font-size: 15px;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    outline: 2px solid #ffb300;
+    border-color: #ffb300;
+}
+
+.formulario .btn {
+    width: 100%;
+}
+
+/* ===== PIE ===== */
+footer {
+    margin-top: 80px;
+    padding: 35px 20px;
+    text-align: center;
+    background-color: #0d0d15;
+    border-top: 2px solid #ff6a00;
+}
+
+footer p {
+    color: #8f8fa8;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #ffb300;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 600px) {
+
+    .hero h1,
+    .hero h1 span {
+        font-size: 30px;
+    }
+
+    .descripcion {
+        font-size: 16px;
+    }
+
+    .titulo-seccion {
+        font-size: 22px;
+    }
+
+    th,
+    td {
+        padding: 10px 8px;
+        font-size: 14px;
+        
+    }
+}
